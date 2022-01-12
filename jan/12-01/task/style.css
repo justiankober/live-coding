@@ -1,0 +1,11 @@
+nav {
+  background-color: ##dc641c;
+}
+nav ul li {
+  display: inline;
+  margin-right: 10rem;
+}
+nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
