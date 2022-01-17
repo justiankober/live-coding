@@ -1,5 +1,8 @@
 body {
-  background-color: orange;
+  background-color: white;
+  background-image: url(../images/sabaliblackonwhite.png);
+  background-position: top;
+  background-repeat: no-repeat;
 }
 /* h1,
 h2,
@@ -21,12 +24,6 @@ nav ul li {
 }
 /* main */
 h1 {
-<<<<<<< HEAD
-  background-color: gray;
-  font-family: "Public Sans", sans-serif;
-  font-size: 2rem;
-  font-weight: 100;
-=======
   /* option 1 */
   color: red;
   /* option 2 */
@@ -35,11 +32,10 @@ h1 {
   color: rgb(100, 106, 182);
   /* option 4 */
   /* color: rgba(); */
-  background-color: rgba(3, 3, 255, 0.837);
+
   font-family: "Indie Flower", "cursive";
   font-size: 2rem;
   font-weight: bolder;
->>>>>>> 5e5ee71f9400172189677d4b9c2c3c7eb7ea59bb
 }
 /*
  DRY
