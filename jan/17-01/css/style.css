@@ -1,8 +1,9 @@
 body {
-  background-color: white;
-  background-image: url(../images/sabaliblackonwhite.png);
-  background-position: top;
-  background-repeat: no-repeat;
+  /* background-color: orange;
+  background-image: url("../images/sky.jpeg");
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: 30rem; */
 }
 /* h1,
 h2,
@@ -50,9 +51,15 @@ section div {
 #red {
   background-color: red;
 }
-#orange {
-  background-color: orange;
-}
-#green {
+#greenquadrant {
   background-color: green;
+}
+{#yellowcircle {
+  background-color: yellow;}
+
+
+/* About main  */
+main img {
+  width: 150px;
+  height: 150px;
 }
