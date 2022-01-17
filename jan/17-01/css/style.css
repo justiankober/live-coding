@@ -48,15 +48,11 @@ section div {
   border: 2px black solid;
   border-radius: 50%;
 }
-#red {
-  background-color: red;
+ {
 }
-#greenquadrant {
-  background-color: green;
+#yellowcircle {
+  background-color: yellow;
 }
-{#yellowcircle {
-  background-color: yellow;}
-
 
 /* About main  */
 main img {
