@@ -1,20 +1,50 @@
 body {
-  background-color: whitesmoke;
+  background-color: orange;
 }
-h1,
+/* h1,
 h2,
 h3,
 #top,
 .dark,
 nav ul li a {
   color: blue;
+} */
+/* menu */
+header nav {
+  background-color: rgba(0, 0, 0, 0.76);
+  position: fixed;
 }
+nav ul li {
+  height: 3rem;
+  display: inline;
+  margin-left: 3rem;
+}
+/* main */
 h1 {
+<<<<<<< HEAD
   background-color: gray;
   font-family: "Public Sans", sans-serif;
   font-size: 2rem;
   font-weight: 100;
+=======
+  /* option 1 */
+  color: red;
+  /* option 2 */
+  color: #ccc;
+  /* option 3 */
+  color: rgb(100, 106, 182);
+  /* option 4 */
+  /* color: rgba(); */
+  background-color: rgba(3, 3, 255, 0.837);
+  font-family: "Indie Flower", "cursive";
+  font-size: 2rem;
+  font-weight: bolder;
+>>>>>>> 5e5ee71f9400172189677d4b9c2c3c7eb7ea59bb
 }
+/*
+ DRY
+Don't Repeat Yourself
+*/
 section div {
   width: 3rem;
   height: 3rem;
