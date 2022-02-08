@@ -16,7 +16,7 @@
 body {
   width: 100vw;
   display: grid;
-  /* if you needed aside menu */
+  /* if you needed a side menu */
   /* grid-template-columns: 10vw 1fr;
   grid-template-rows: 5vh repeat(3, 60vh) 10vh;
   grid-template-areas:
@@ -37,7 +37,7 @@ body {
   grid-area: side;
   background: red;
 } */
-/* nobile */
+/* mobile */
 /* @media only screen and (max-width: 450px) {
   body {
     font-size: 1.2rem;
