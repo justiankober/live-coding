@@ -3,3 +3,33 @@ footer {
   grid-area: footer;
   display: flex;
 }
+footer div {
+  div {
+    display: block;
+  }
+}
+.footer__meta-list {
+  margin: 0 1.25rem;
+  padding: 1.25rem 0;
+}
+
+.flex-center {
+  justify-content: center;
+}
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+ul {
+  line-height: 1.4;
+  margin: 0;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.flex-center {
+  justify-content: center;
+  flex-flow: row wrap;
+}

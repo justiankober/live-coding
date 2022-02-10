@@ -17,18 +17,26 @@ body {
     "card"
     "footer";
 }
-@media only screen and (min-width: 600) {
+@media only screen and (min-width: 600px) {
   body {
     /* font-size: 2.5rem; */
     grid-template-rows: 15vh repeat(4, 75vh);
+    background: #cecece;
+    color: #333;
+    font-family: DBSansRegular, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin: auto;
   }
 }
-@media only screen and (min-width: 900) {
+@media only screen and (min-width: 900px) {
   body {
-    font-size: 1rem;
     grid-template-rows: 15vh repeat(4, 65vh);
   }
-  .menu {
+  /* This should fix the menu but it doesn't work?! */
+  header nav .menu {
+    width: 15vw;
+  }
+  h2 {
     font-size: 1rem;
   }
 }

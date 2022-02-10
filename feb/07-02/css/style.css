@@ -37,13 +37,10 @@ body {
   grid-area: side;
   background: red;
 } */
-<<<<<<< HEAD
 /* mobile */
 /* @media only screen and (max-width: 450px) {
-=======
 /* nobile */
 @media only screen and (max-width: 450px) {
->>>>>>> 14a5bb8a720f090b190452a07263229ff33d05ff
   body {
     font-size: 1.2rem;
     grid-template-rows: 5vh repeat(3, 80vh) 10vh;
