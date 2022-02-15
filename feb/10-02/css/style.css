@@ -30,18 +30,6 @@ body {
     display: none;
   }
 }
-<<<<<<< HEAD
-@media only screen and (min-width: 900px) {
-  body {
-    grid-template-rows: 15vh repeat(4, 65vh);
-  }
-  /* This should fix the menu but it doesn't work?! */
-  header nav .menu {
-    width: 15vw;
-  }
-  h2 {
-    font-size: 1rem;
-=======
 @media only screen and (max-width: 750px) {
   body {
     grid-template-rows: 15vh repeat(4, 65vh);
@@ -49,6 +37,5 @@ body {
   header nav .menu {
     border: 2px orange solid;
     display: none;
->>>>>>> 6214e5e0218eaca3170786023f097b798d6cd9b8
   }
 }
