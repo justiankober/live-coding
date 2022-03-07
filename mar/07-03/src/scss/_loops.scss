@@ -44,3 +44,297 @@
 // .item {
 //   border: 2px red dashed;
 // }
+
+// Tron Spinner
+// Config ----------------------------------
+
+$spinner-size: 200px; // 200px
+$spinner-thickness: 4px; // 4px
+$spinner-speed: 5.2s; // 1.2s
+
+$spinner-3d: true; // true
+$spinner-loops: infinite; // infinite (be careful, save the batteries!)
+
+// Spinner ----------------------------------
+
+.spinner {
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  width: $spinner-size;
+  height: $spinner-size;
+  border-radius: $spinner-size / 2;
+  border: $spinner-thickness solid hsla(0, 0%, 100%, 0.1);
+  @if ($spinner-3d) {
+    // mask smoothens out the anti-aliasing artifacts in the back.
+    -webkit-mask: linear-gradient(hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 1) 90%);
+    transform-origin: 50% 60%;
+    transform: perspective($spinner-size) rotateX(66deg);
+    animation: spinner-wiggle $spinner-speed $spinner-loops;
+  }
+}
+
+@keyframes spinner-wiggle {
+  30% {
+    transform: perspective($spinner-size) rotateX(66deg);
+  }
+  40% {
+    transform: perspective($spinner-size) rotateX(65deg);
+  }
+  50% {
+    transform: perspective($spinner-size) rotateX(68deg);
+  }
+  60% {
+    transform: perspective($spinner-size) rotateX(64deg);
+  }
+}
+
+.spinner:before,
+.spinner:after {
+  content: "";
+  position: absolute;
+  margin: -$spinner-thickness;
+  box-sizing: inherit;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  opacity: 0.05;
+  border: inherit;
+  border-color: transparent;
+  animation: spinner-spin $spinner-speed cubic-bezier(0.6, 0.2, 0, 0.8)
+      $spinner-loops,
+    spinner-fade $spinner-speed linear $spinner-loops;
+}
+
+.spinner:before {
+  border-top-color: hsl(190, 100%, 70%);
+}
+
+.spinner:after {
+  border-top-color: hsl(50, 80%, 70%);
+  animation-delay: $spinner-speed * 0.25;
+}
+
+@keyframes spinner-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-fade {
+  20% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.1;
+  }
+}
+
+// Page ----------------------------------
+article {
+  display: flex;
+  padding: 50px;
+  box-sizing: border-box;
+  background: radial-gradient(hsl(200, 40%, 20%), hsl(200, 30%, 6%));
+}
+
+html,
+body {
+  height: 100%;
+}
+
+// Trippy Animation
+//CONFIG
+// Play with these for some cool effects (use rems to keep it consistent)
+// Show me on twitter if you find a cool combination @nathantokyo
+
+$time: 10s; //overall time for 1 rotation
+$ease: cubic-bezier(0.77, 0, 0.175, 1); //animation easing
+$loops: 100; //divider for setting delays
+
+$thick: 0.25rem; //shadow offset
+$blur: 0rem; //shadow blur
+$spread: 0.4rem; //shadow spread
+$radius: 20rem; // border-radius
+
+//START
+
+$back: #000;
+$color: white;
+$base: 1vh;
+
+html {
+  font-size: $base;
+}
+
+.article2 {
+  height: 100vh;
+  width: 100vw;
+  background: $back;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle {
+  position: absolute;
+  top: 175rem;
+  left: calc(50% - 25rem);
+  width: 50rem;
+  height: 50rem;
+  animation: spin $time infinite alternate $ease;
+
+  &:nth-child(1) {
+    animation-delay: -$time * 1 / $loops;
+  }
+  &:nth-child(2) {
+    animation-delay: -$time * 2 / $loops;
+  }
+  &:nth-child(3) {
+    animation-delay: -$time * 3 / $loops;
+  }
+  &:nth-child(4) {
+    animation-delay: -$time * 4 / $loops;
+  }
+  &:nth-child(5) {
+    animation-delay: -$time * 5 / $loops;
+  }
+  &:nth-child(6) {
+    animation-delay: -$time * 6 / $loops;
+  }
+  &:nth-child(7) {
+    animation-delay: -$time * 7 / $loops;
+  }
+  &:nth-child(8) {
+    animation-delay: -$time * 8 / $loops;
+  }
+  &:nth-child(9) {
+    animation-delay: -$time * 9 / $loops;
+  }
+  &:nth-child(10) {
+    animation-delay: -$time * 10 / $loops;
+  }
+  &:nth-child(11) {
+    animation-delay: -$time * 11 / $loops;
+  }
+  &:nth-child(12) {
+    animation-delay: -$time * 12 / $loops;
+  }
+  &:nth-child(13) {
+    animation-delay: -$time * 13 / $loops;
+  }
+  &:nth-child(14) {
+    animation-delay: -$time * 14 / $loops;
+  }
+  &:nth-child(15) {
+    animation-delay: -$time * 15 / $loops;
+  }
+  &:nth-child(16) {
+    animation-delay: -$time * 16 / $loops;
+  }
+  &:nth-child(17) {
+    animation-delay: -$time * 17 / $loops;
+  }
+  &:nth-child(18) {
+    animation-delay: -$time * 18 / $loops;
+  }
+  &:nth-child(19) {
+    animation-delay: -$time * 19 / $loops;
+  }
+  &:nth-child(20) {
+    animation-delay: -$time * 20 / $loops;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: $radius;
+    box-shadow: -$thick 0rem $blur $spread $color;
+  }
+  &:nth-child(1):after {
+    transform: scale(1);
+  }
+  &:nth-child(2):after {
+    transform: scale(0.95);
+  }
+  &:nth-child(3):after {
+    transform: scale(0.9);
+  }
+  &:nth-child(4):after {
+    transform: scale(0.85);
+  }
+  &:nth-child(5):after {
+    transform: scale(0.8);
+  }
+  &:nth-child(6):after {
+    transform: scale(0.75);
+  }
+  &:nth-child(7):after {
+    transform: scale(0.7);
+  }
+  &:nth-child(8):after {
+    transform: scale(0.65);
+  }
+  &:nth-child(9):after {
+    transform: scale(0.6);
+  }
+  &:nth-child(10):after {
+    transform: scale(0.55);
+  }
+  &:nth-child(11):after {
+    transform: scale(0.5);
+  }
+  &:nth-child(12):after {
+    transform: scale(0.45);
+  }
+  &:nth-child(13):after {
+    transform: scale(0.4);
+  }
+  &:nth-child(14):after {
+    transform: scale(0.35);
+  }
+  &:nth-child(15):after {
+    transform: scale(0.3);
+  }
+  &:nth-child(16):after {
+    transform: scale(0.25);
+  }
+  &:nth-child(17):after {
+    transform: scale(0.2);
+  }
+  &:nth-child(18):after {
+    transform: scale(0.15);
+  }
+  &:nth-child(19):after {
+    transform: scale(0.1);
+  }
+  &:nth-child(20):after {
+    transform: scale(0.05);
+  }
+}
+
+.sig {
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 100;
+  font-family: sans-serif;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 2px;
+}
+
+//
