@@ -72,7 +72,7 @@
 // If the class does not match either, give the
 //  label a red solid border.
 
-// const labels = document.querySelectorAll(".info lasbel");
+// const labels = document.querySelectorAll(".info label");
 
 const calculatePrice = (obj) => ({
   finalPrice: obj.originalPrice - obj.discount,
