@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Set the background color of a paragraph</title>
+  </head>
+  <body>
+    <input
+      type="button"
+      onclick="styleAccordingToTaskThree()"
+      value="Click to set paragraph background color"
+    />
+    <p>JavaScript Exercises</p>
+    <p>PHP Exercises</p>
+  </body>
+</html>
+<script>
+  function styleAccordingToTaskThree() {
+    document.querySelectorAll("p").style.backgroundColor = "red";
+  }
+</script>
